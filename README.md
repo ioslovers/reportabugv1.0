@@ -9,3 +9,8 @@ This control is like for big application scope when almost thousand of bug can r
 
 The purpose of this controller is just make good quality of application by user point of view.
 
+<MTMarkdownOptions output='html4'>
+   <h2>Screens Layout</h2>
+  <img border="0" src="/Reportabug/Reportabug/layout.gif" alt="" width="320" height="568">
+
+</MTMarkdownOptions>
