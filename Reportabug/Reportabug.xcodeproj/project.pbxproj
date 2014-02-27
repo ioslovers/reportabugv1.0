@@ -24,9 +24,10 @@
 		75BE909C18BCC3B700B6BCF1 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BE908F18BCC3B700B6BCF1 /* iCarousel.m */; };
 		75BE909D18BCC3B700B6BCF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BE909218BCC3B700B6BCF1 /* AppDelegate.m */; };
 		75BE909E18BCC3B700B6BCF1 /* CTAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BE909518BCC3B700B6BCF1 /* CTAssetsPickerController.m */; };
-		75BE909F18BCC3B700B6BCF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BE909818BCC3B700B6BCF1 /* ViewController.m */; };
-		75BE90A018BCC3B700B6BCF1 /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BE909B18BCC3B700B6BCF1 /* detailViewController.m */; };
+		75BE909F18BCC3B700B6BCF1 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BE909818BCC3B700B6BCF1 /* HomeViewController.m */; };
+		75BE90A018BCC3B700B6BCF1 /* BugDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BE909B18BCC3B700B6BCF1 /* BugDescriptionViewController.m */; };
 		75BE90A418BCC42C00B6BCF1 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BE90A318BCC42C00B6BCF1 /* Logger.m */; };
+		75E2101118BF376F00286C89 /* layout.gif in Resources */ = {isa = PBXBuildFile; fileRef = 75E2101018BF376F00286C89 /* layout.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,12 +64,13 @@
 		75BE909218BCC3B700B6BCF1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		75BE909418BCC3B700B6BCF1 /* CTAssetsPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTAssetsPickerController.h; sourceTree = "<group>"; };
 		75BE909518BCC3B700B6BCF1 /* CTAssetsPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTAssetsPickerController.m; sourceTree = "<group>"; };
-		75BE909718BCC3B700B6BCF1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		75BE909818BCC3B700B6BCF1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		75BE909A18BCC3B700B6BCF1 /* detailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailViewController.h; sourceTree = "<group>"; };
-		75BE909B18BCC3B700B6BCF1 /* detailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailViewController.m; sourceTree = "<group>"; };
+		75BE909718BCC3B700B6BCF1 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		75BE909818BCC3B700B6BCF1 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		75BE909A18BCC3B700B6BCF1 /* BugDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BugDescriptionViewController.h; sourceTree = "<group>"; };
+		75BE909B18BCC3B700B6BCF1 /* BugDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BugDescriptionViewController.m; sourceTree = "<group>"; };
 		75BE90A218BCC42C00B6BCF1 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 		75BE90A318BCC42C00B6BCF1 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		75E2101018BF376F00286C89 /* layout.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = layout.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		75B968A818BB6136008DA3F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				75E2101018BF376F00286C89 /* layout.gif */,
 				75B968A918BB6136008DA3F8 /* Reportabug-Info.plist */,
 				75B968AA18BB6136008DA3F8 /* InfoPlist.strings */,
 				75B968AD18BB6136008DA3F8 /* main.m */,
@@ -203,8 +206,8 @@
 		75BE909618BCC3B700B6BCF1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				75BE909718BCC3B700B6BCF1 /* ViewController.h */,
-				75BE909818BCC3B700B6BCF1 /* ViewController.m */,
+				75BE909718BCC3B700B6BCF1 /* HomeViewController.h */,
+				75BE909818BCC3B700B6BCF1 /* HomeViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -212,8 +215,8 @@
 		75BE909918BCC3B700B6BCF1 /* DetailVC */ = {
 			isa = PBXGroup;
 			children = (
-				75BE909A18BCC3B700B6BCF1 /* detailViewController.h */,
-				75BE909B18BCC3B700B6BCF1 /* detailViewController.m */,
+				75BE909A18BCC3B700B6BCF1 /* BugDescriptionViewController.h */,
+				75BE909B18BCC3B700B6BCF1 /* BugDescriptionViewController.m */,
 			);
 			path = DetailVC;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E2101118BF376F00286C89 /* layout.gif in Resources */,
 				75B968B818BB6136008DA3F8 /* Main_iPad.storyboard in Resources */,
 				75B968BD18BB6136008DA3F8 /* Images.xcassets in Resources */,
 				75B968B518BB6136008DA3F8 /* Main_iPhone.storyboard in Resources */,
@@ -329,9 +333,9 @@
 				75BE909E18BCC3B700B6BCF1 /* CTAssetsPickerController.m in Sources */,
 				75BE909C18BCC3B700B6BCF1 /* iCarousel.m in Sources */,
 				75BE909D18BCC3B700B6BCF1 /* AppDelegate.m in Sources */,
-				75BE909F18BCC3B700B6BCF1 /* ViewController.m in Sources */,
+				75BE909F18BCC3B700B6BCF1 /* HomeViewController.m in Sources */,
 				75BE90A418BCC42C00B6BCF1 /* Logger.m in Sources */,
-				75BE90A018BCC3B700B6BCF1 /* detailViewController.m in Sources */,
+				75BE90A018BCC3B700B6BCF1 /* BugDescriptionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

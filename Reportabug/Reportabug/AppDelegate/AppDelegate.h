@@ -1,10 +1,9 @@
-//
-//  AppDelegate.h
-//  Reportabug
-//
-//  Created by Ashish Tripathi on 24/02/14.
-//  Copyright (c) 2014 Ashish Tripathi. All rights reserved.
-//
+/*
+ File Name: AppDelegate
+ Description: This is the main file which has been used to display all UIPart
+ Creator: Ashish Tripathi
+ Copyright 2014 ioslovers
+ */
 
 #import <UIKit/UIKit.h>
 

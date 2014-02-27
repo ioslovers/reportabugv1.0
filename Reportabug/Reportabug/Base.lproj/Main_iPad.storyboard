@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Home-->
+        <!--Home View Controller - Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="387-jW-SBw"/>
                         <viewControllerLayoutGuide type="bottom" id="bvP-cg-bgV"/>
@@ -23,7 +23,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="Qmc-V4-KWx">
-                                        <rect key="frame" x="0.0" y="86" width="768" height="44"/>
+                                        <rect key="frame" x="0.0" y="22" width="768" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qmc-V4-KWx" id="Yfc-v5-UPI">
                                             <rect key="frame" x="0.0" y="0.0" width="735" height="43"/>
@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="-1070" y="-342"/>
         </scene>
-        <!--Detail View Controller - Sumbit bug Details-->
+        <!--Bug Description View Controller - Sumbit bug Details-->
         <scene sceneID="t27-nL-lxt">
             <objects>
-                <viewController id="qGt-s5-44S" customClass="detailViewController" sceneMemberID="viewController">
+                <viewController id="qGt-s5-44S" customClass="BugDescriptionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lcf-tH-DVr"/>
                         <viewControllerLayoutGuide type="bottom" id="ICz-hG-6IC"/>

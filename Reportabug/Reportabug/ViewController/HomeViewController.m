@@ -1,18 +1,23 @@
-//
-//  ViewController.m
-//  Reportabug
-//
-//  Created by Ashish Tripathi on 24/02/14.
-//  Copyright (c) 2014 Ashish Tripathi. All rights reserved.
-//
+/*
+ File Name: HomeViewController
+ 
+ Description: This file execute after App Delegate class and this will come out with UITable view and Report a bug cell.
+ 
+ Creator: Ashish Tripathi
+ 
+ Copyright 2014 ioslovers
+ */
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 #import "Logger.h"
-@interface ViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation HomeViewController
+
+#pragma UIView life cycles Methods
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -21,14 +26,18 @@
     }
     return self;
 }
+
 void uncaughtExceptionHandler(NSException *exception) {
     
+    //Logger file will get exection if any failure
      [Logger error:@"error code" exception:exception];
 }
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   
+   //Setup a handler for exeptions.
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
    
 	// Do any additional setup after loading the view.
@@ -39,6 +48,8 @@ void uncaughtExceptionHandler(NSException *exception) {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma UITableView Data Source Methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 

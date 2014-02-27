@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 Ashish Tripathi. All rights reserved.
 //
 
-#import "detailViewController.h"
+#import "BugDescriptionViewController.h"
 #import "CTAssetsPickerController.h"
 
 
 
-@interface detailViewController ()<UINavigationControllerDelegate, CTAssetsPickerControllerDelegate>
+@interface BugDescriptionViewController ()<UINavigationControllerDelegate, CTAssetsPickerControllerDelegate>
 
 @property (nonatomic, strong) NSDateFormatter *dateFormatter;
 @end
 
-@implementation detailViewController
+@implementation BugDescriptionViewController
 
 #pragma mark ViewLifeCycle
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
