@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="sAr-R1-1zf">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Home-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="u3d-M8-sfm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="Rjg-JQ-Ho4">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rjg-JQ-Ho4" id="frk-kf-Fxf">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="EK9-ZJ-9hm" kind="push" id="LP3-vV-yKa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="Apo-eR-TLV"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="3lT-Gx-ehd"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="Gbl-FY-DpZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="41"/>
+        </scene>
+        <!--Detail View Controller - Bug Details-->
+        <scene sceneID="fss-Jq-z9e">
+            <objects>
+                <viewController id="EK9-ZJ-9hm" customClass="detailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tw3-Mf-ynp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bug Title" minimumFontSize="17" id="rRf-KN-7ni">
+                                <rect key="frame" x="20" y="69" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="64" maxX="0.0" maxY="-64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="EK9-ZJ-9hm" id="NOY-7t-hcQ"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="EVR-du-PD9">
+                                <rect key="frame" x="20" y="107" width="280" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86666673419999996" green="0.86666673419999996" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="64" maxX="0.0" maxY="-64"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="EK9-ZJ-9hm" id="WGS-ff-tLS"/>
+                                </connections>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fiL-xg-8T2">
+                                <rect key="frame" x="20" y="330" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="64" maxX="0.0" maxY="-79"/>
+                                <state key="normal" title="Add Screen Shots">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPressedAddScreenShots:" destination="EK9-ZJ-9hm" eventType="touchUpInside" id="0VE-eK-8Vv"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="YMY-a7-TEG" customClass="iCarousel">
+                                <rect key="frame" x="20" y="368" width="280" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.86666673419999996" green="0.86666673419999996" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="64" maxX="0.0" maxY="-64"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EK9-ZJ-9hm" id="aIm-ES-6vh"/>
+                                    <outlet property="delegate" destination="EK9-ZJ-9hm" id="KJG-ct-fc4"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mba-gd-tVc">
+                                <rect key="frame" x="20" y="293" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="64" maxX="0.0" maxY="-64"/>
+                                <state key="normal" image="unchecked"/>
+                                <state key="selected" image="checked"/>
+                                <connections>
+                                    <action selector="btnPressedAddLogs:" destination="EK9-ZJ-9hm" eventType="touchUpInside" id="SCl-vs-Ioz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Log FIle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S18-cd-VIc">
+                                <rect key="frame" x="60" y="297" width="218" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="64" maxX="0.0" maxY="-64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bug Details" id="DMV-0z-i0B">
+                        <barButtonItem key="rightBarButtonItem" title="Send Report" id="pS0-gq-fTY">
+                            <connections>
+                                <action selector="btnPressedSendReport:" destination="EK9-ZJ-9hm" id="CeQ-Rk-1Sj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnCheckUncheck" destination="mba-gd-tVc" id="0xz-6Z-Ojd"/>
+                        <outlet property="txtFieldTitle" destination="rRf-KN-7ni" id="eQT-fe-TAD"/>
+                        <outlet property="txtViewDescriptions" destination="EVR-du-PD9" id="E9y-bm-aR2"/>
+                        <outlet property="viewForPictures" destination="YMY-a7-TEG" id="0pa-zU-eoz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ym-qk-df4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="41"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dqx-fb-Bsc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sAr-R1-1zf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YZu-Ad-6WX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="HkU-jB-rgH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xPF-Yc-jTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-349" y="35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checked" width="64" height="64"/>
+        <image name="unchecked" width="64" height="64"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
